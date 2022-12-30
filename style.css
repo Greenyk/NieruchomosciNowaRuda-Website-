@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: red;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    height: 100vh;
+    width: 100vh;
+    background: rgb(255,189,47);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(100%);
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+.burger {
+    height: 3.4rem;
+    width: 3.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: transparent;
+    border: none;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.burger span {
+    width: 100%;
+    height: 0.4rem;
+    background: black;
+    border-radius: 0.5rem;
+
+}
+
+.burger.active {
+    z-index: 10;
+}
+
+.burger.active > span {
+    background: white;
+}
+
+.burger span:nth-child(2) {
+    width: 80%;
+}
+
+.burger span:nth-child(3) {
+    width: 60%;
+}
+
+.burger.active > span:nth-child(1) {
+    transform: rotate(-45deg) translateY(15px) translateX(-13px);
+    width: 80%;
+}
+
+.burger.active > span:nth-child(2) {
+    transform: rotate(45deg) translateY(1px) translateX(1px);
+}
+
+.burger.active > span:nth-child(3) {
+    transform: translateX(110vw);
+}
+
+/* DESKTOP MENU */
+@media only screen and (min-width: 1000px){
+    .menu{
+        position: unset;
+        background: inherit;
+
+}
+}
+
+

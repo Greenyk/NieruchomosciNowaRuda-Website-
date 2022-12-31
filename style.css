@@ -88,8 +88,48 @@ header{
     .menu{
         position: unset;
         background: inherit;
-
+        color: pink;
+        list-style: none;
+        flex-direction: row;
+        height: inherit;
+        width: max-content;
+        gap: 5rem;
+        font-size: 1.2rem;
+        font-weight: normal;
+        align-items: center;
+        transform: translateY(0);
 }
+    .menu-link{
+        position: relative;
+        cursor: pointer;
+    }
+
+    .menu-link:after {
+        content: '';
+        width: 0%;
+        height: 0.2rem;
+        background: indianred;
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0;
+        border-radius: 2rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-link:hover::after {
+        width: 100%;
+    }
+
+    .menu-link:last-child {
+        background: green;
+        padding: 0.5rem 1.5rem;
+        border-radius: 1rem;
+        color: white;
+    }
+
+    .menu-link:last-child::after {
+        display: none;
+    }
 }
 
 

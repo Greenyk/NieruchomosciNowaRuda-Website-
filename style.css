@@ -29,6 +29,14 @@ header{
     transform: translateX(100%);
 }
 
+.menu span {
+    color: red;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+
+}
+
 .menu.active {
     transform: translateX(0);
 }
@@ -93,8 +101,8 @@ header{
         flex-direction: row;
         height: inherit;
         width: max-content;
-        gap: 5rem;
-        font-size: 1.2rem;
+        gap: 10rem;
+        font-size: 2rem;
         font-weight: normal;
         align-items: center;
         transform: translateY(0);
@@ -120,7 +128,7 @@ header{
         width: 100%;
     }
 
-    .menu-link:last-child {
+    .menu-link:nth-child(3) {
         background: green;
         padding: 0.5rem 1.5rem;
         border-radius: 1rem;
@@ -132,9 +140,43 @@ header{
     }
 }
  /* Welcome Section */
-.home-content{
-    font-size: 2.5rem;
+.container{
+    width: 2000px;
+    margin: auto;
+    height: 600px;
+    background: rgb(243,166,0);
+    padding: 4rem 5rem;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 4px 10px rgba(37,37,37,0.5);
+}
+.textblock{
+    width: 45%;
+    font-family: Arial;
+}
+.textblock .title{
     text-align: center;
-    color: plum;
+    text-transform: uppercase;
+    color: green;
+    margin-bottom: 1.5rem;
+    background: pink;
+}
+.textblock .sub-title{
+    text-align: center;
+    font-size: 1.2rem;
+    color: deeppink;
+    margin-bottom: 1.8rem;
+}
+.textblock p{
+    margin-bottom: 1.3rem;
 }
 
+.container img{
+    position: absolute;
+    top:10%;
+    right: -3%;
+    box-shadow: 5px 4px 10px rgba(37,37,37,0.5);
+    border-radius: 20px;
+    width: 42%;
+
+}

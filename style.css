@@ -2,14 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background: white;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+    transition: all 0.4s ease-in-out;
+}
 
+header.active {
+    box-shadow: deeppink;
 }
 
 .menu {
@@ -21,20 +28,13 @@ header{
     color: white;
     font-weight: bold;
     height: 100vh;
-    width: 100vh;
-    background: rgb(255,189,47);
+    width: 100vw;
+    background: orangered;
     position: absolute;
     left: 0;
     top: 0;
     transform: translateX(100%);
-}
-
-.menu span {
-    color: red;
-    position: absolute;
-    top: 20%;
-    left: 25%;
-
+    transition: all 0.3s ease-in-out;
 }
 
 .menu.active {
@@ -51,15 +51,8 @@ header{
     border: none;
     align-items: flex-end;
     cursor: pointer;
+    position: relative;
     transition: all 0.3s ease-in-out;
-}
-
-.burger span {
-    width: 100%;
-    height: 0.4rem;
-    background: black;
-    border-radius: 0.5rem;
-
 }
 
 .burger.active {
@@ -68,6 +61,14 @@ header{
 
 .burger.active > span {
     background: white;
+}
+
+.burger span {
+    width: 100%;
+    height: 0.3rem;
+    border-radius: 0.5rem;
+    background: orangered;
+    transition: all 0.3s ease-in-out;
 }
 
 .burger span:nth-child(2) {
@@ -79,46 +80,51 @@ header{
 }
 
 .burger.active > span:nth-child(1) {
-    transform: rotate(-45deg) translateY(15px) translateX(-13px);
+    transform: rotate(-45deg) translateY(1rem) translateX(-0.1rem);
     width: 80%;
 }
 
 .burger.active > span:nth-child(2) {
-    transform: rotate(45deg) translateY(1px) translateX(1px);
+    transform: rotate(45deg) translateY(-0.7rem) translateX(0.2rem);
 }
 
 .burger.active > span:nth-child(3) {
-    transform: translateX(110vw);
+    transform: translateX(100vw);
+}
+
+.menu-link {
+    position: relative;
+    cursor: pointer;
 }
 
 /* DESKTOP MENU */
-@media only screen and (min-width: 1000px){
-    .menu{
+
+@media only screen and (min-width: 1000px) {
+    .burger {
+        display: none;
+    }
+    .menu {
         position: unset;
         background: inherit;
-        color: pink;
+        color: black;
         list-style: none;
         flex-direction: row;
         height: inherit;
-        width: max-content;
-        gap: 10rem;
+        width: max-content ;
+        gap: 5rem;
         font-size: 2rem;
         font-weight: normal;
         align-items: center;
-        transform: translateY(0);
-}
-    .menu-link{
-        position: relative;
-        cursor: pointer;
+        transform: translateX(0);
     }
 
-    .menu-link:after {
+    .menu-link::after {
         content: '';
         width: 0%;
-        height: 0.2rem;
-        background: indianred;
+        height: 0.3rem;
+        background: #ae6502;
         position: absolute;
-        bottom: -0.2rem;
+        bottom: -0.4rem;
         left: 0;
         border-radius: 2rem;
         transition: all 0.3s ease-in-out;
@@ -128,55 +134,28 @@ header{
         width: 100%;
     }
 
-    .menu-link:nth-child(3) {
-        background: green;
+    .menu-link:first-child {
+        background: #ae6502;
         padding: 0.5rem 1.5rem;
         border-radius: 1rem;
         color: white;
     }
 
-    .menu-link:last-child::after {
+    .menu-link:first-child::after {
         display: none;
     }
 }
- /* Welcome Section */
-.container{
-    width: 2000px;
-    margin: auto;
-    height: 600px;
-    background: rgb(243,166,0);
-    padding: 4rem 5rem;
-    position: relative;
-    border-radius: 20px;
-    box-shadow: 5px 4px 10px rgba(37,37,37,0.5);
-}
-.textblock{
-    width: 45%;
-    font-family: Arial;
-}
-.textblock .title{
-    text-align: center;
-    text-transform: uppercase;
-    color: green;
-    margin-bottom: 1.5rem;
-    background: pink;
-}
-.textblock .sub-title{
-    text-align: center;
-    font-size: 1.2rem;
-    color: deeppink;
-    margin-bottom: 1.8rem;
-}
-.textblock p{
-    margin-bottom: 1.3rem;
+
+/* Section Title */
+.welcome{
+    display: flex;
+    justify-content: center;
+    background-color: orangered;
+    min-width: 50%;
 }
 
-.container img{
-    position: absolute;
-    top:10%;
-    right: -3%;
-    box-shadow: 5px 4px 10px rgba(37,37,37,0.5);
-    border-radius: 20px;
-    width: 42%;
 
-}
+
+
+
+

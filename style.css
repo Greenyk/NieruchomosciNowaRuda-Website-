@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.logo{
+    display: inline-block;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -147,14 +151,31 @@ header.active {
 }
 
 /* Section Title */
-.welcome{
+.home-section{
+    margin: 100px auto auto;
+    width: 2000px;
+    height: 1000px;
+    border: 2px solid #2d2d2d;
+    border-color: orangered;
+    border-radius: 2rem;
     display: flex;
-    justify-content: center;
-    background-color: orangered;
-    min-width: 50%;
+
 }
 
+.title {
+    display: inline-block;
+    color: orangered;
+    font-size: 60px;
 
+    align-items: start;
+    justify-content: center;
+}
+
+.about{
+    font-size:10px;
+    margin: auto;
+    display: inline-block;
+}
 
 
 

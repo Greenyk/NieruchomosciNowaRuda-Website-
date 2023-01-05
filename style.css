@@ -6,6 +6,7 @@
 
 .logo{
     display: inline-block;
+    background: none;
 }
 
 header {
@@ -114,7 +115,7 @@ header.active {
         list-style: none;
         flex-direction: row;
         height: inherit;
-        width: max-content ;
+        /*width: max-content ;*/
         gap: 5rem;
         font-size: 2rem;
         font-weight: normal;
@@ -126,7 +127,7 @@ header.active {
         content: '';
         width: 0%;
         height: 0.3rem;
-        background: #ae6502;
+        background: #2d2dea;
         position: absolute;
         bottom: -0.4rem;
         left: 0;
@@ -138,50 +139,104 @@ header.active {
         width: 100%;
     }
 
-    .menu-link:first-child {
+    .menu-link:nth-child(2) {
         background: #ae6502;
         padding: 0.5rem 1.5rem;
         border-radius: 1rem;
         color: white;
     }
 
-    .menu-link:first-child::after {
+    .menu-link:nth-child(2)::after {
         display: none;
     }
 }
 
-/* Section Title */
-.office {
-    width: 100%;
-    height: 100%;
+/* Section first */
+.photo-office{
+    width: 100vw;
     position: relative;
+    top: 0;
+    left: 0;
+    border: 2px solid grey;
+    overflow: hidden;
+
+}
+.section-one h1{
+    display: inline;
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    font-size: 100px;
 }
 
-.home-section{
-
+.container{
     width: 1500px;
     height: 500px;
     border-radius: 2rem;
-    margin: 100px auto auto;
-    background-color: lightcoral;
+    margin: 0 auto;
+    background: orange;
+    box-shadow: 7px 5px 34px -1px rgba(0,0,0,0.52);
     position: absolute;
     left: 0;
     right: 0;
     top: 600px;
 
 }
-.title {
-    margin-top: 20px;
-    color: orangered;
-    font-size: 60px;
-    text-align: center;
+.about{
+    font-family: 'Roboto', sans-serif;
+    font-size:50px;
+    margin-left: 20px;
+    color: grey;
+    font-weight: bold;
 }
 
-.about{
-    display: inline-block;
-    font-size:10px;
-    margin: auto;
+.about p{
+    font-size: 50px;
 }
+
+.container .click-contact{
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 99px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width:50%;
+    margin-left: 25%;
+    top: 50%;
+    background: #345dff;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 2px -14px 57px -1px rgba(0,0,0,0.38);
+
+}
+
+.container .click-contact:hover{
+    background: green;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Section two */
+
+.section-two{
+    width: 2000px;
+    height: 2000px;
+    background-color: black;
+    color: blue;
+}
+
+.container-submission{
+    width: 200px;
+    height: 600px;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
 
 
 

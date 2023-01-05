@@ -219,24 +219,87 @@ header.active {
 /* Section two */
 
 .section-two{
-    width: 2000px;
-    height: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
     background-color: black;
-    color: blue;
+}
+
+.container-contact{
+    width: 33%;
+    height: 33%;
+    background-color: lightblue;
+    margin-right: 0.5rem;
 }
 
 .container-submission{
-    width: 200px;
-    height: 600px;
-    background-color: red;
+    width: 35%;
+    height: 40%;
+    background-color: lightblue;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
 }
 
+.container-submission p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.container-submission .name-surname {
+    align-self: flex-start;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.container-submission .number {
+    align-self: flex-start;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.container-submission .email {
+    align-self: flex-start;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.container-submission .message {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.container-submission .message{
+    width: 90%;
+    height: 30%;
+}
+
+.container-submission .btm-send{
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+.container-submission .btm-send:hover {
+    background: green;
+    transition: all 0.3s ease-in-out;
+}
 
 
 

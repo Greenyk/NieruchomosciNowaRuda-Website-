@@ -1,0 +1,1 @@
+{"version":3,"sources":["modules/header.scss","modules/header.css"],"names":[],"mappings":"AAEI,iBAEE,WAAA,CADA,WCAN","file":"styles.css","sourcesContent":["header {\r\n  .logo {\r\n    img {\r\n      width: 300px;\r\n      height: auto;\r\n    }\r\n  }\r\n}\r\n","header .logo img {\n  width: 300px;\n  height: auto;\n}"]}

@@ -1,0 +1,66 @@
+section.welcome {
+  background-image: url("/images/office.jpg");
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container-welcome{
+    width: 50%;
+    height: 50%;
+    background-color: pink;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .welcome-text{
+      width: 100%;
+      height: 10%;
+      background-color: blue;
+      color: white;
+    }
+
+    .buy{
+      display: inline;
+      width: 30%;
+      height: 20%;
+      background-color: red;
+    }
+
+    .sell{
+      display: inline;
+      width: 30%;
+      height: 20%;
+      background-color: red;
+    }
+
+    .rent {
+      display: inline;
+      width: 30%;
+      height: 20%;
+      background-color: red;
+    }
+
+    .logo-container-welcome{
+      width: 40%;
+      height: 50%;
+      background-color: blue;
+    }
+
+    .contact-btn{
+      position: absolute;
+      top: 96%;
+      left: 50%;
+      border: none;
+      background-color: orangered;
+      cursor: pointer;
+      border-radius: 20px;
+      padding: 10px 15px;
+
+      &:hover {
+        background-color: green;
+      }
+    }
+  }
+}

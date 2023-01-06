@@ -1,0 +1,48 @@
+{
+  "name": "nieruchomosci",
+  "version": "1.0.0",
+  "description": "Simple front-end boilerplate using Gulp 4 and Bootstrap 5",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "gulp",
+    "boilerplate",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "https://wellmade.online",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.18.10",
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^5.0.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-replace": "^1.1.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.39.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "@splidejs/splide": "^3.0.8",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.19.0",
+    "browserify": "^17.0.0",
+    "gulp-file-include": "^2.3.0",
+    "nouislider": "^15.1.0",
+    "postcss": "^8.3.9",
+    "swiper": "^8.3.2",
+    "timezz": "^6.1.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

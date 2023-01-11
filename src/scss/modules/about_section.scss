@@ -6,10 +6,16 @@ section.about {
   height: 800px;
   background-color: lightblue;
 
+
   .about_info {
     width: 400px;
     height: 600px;
     background: orangered;
+    border-radius: 20px;
+
+    .about_info_welcome{
+      text-align: center;
+    }
   }
   .photos_div {
       width: 200px;

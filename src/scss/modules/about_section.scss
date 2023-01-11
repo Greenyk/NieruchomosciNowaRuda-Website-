@@ -10,7 +10,7 @@ section.about {
   .about_info {
     width: 400px;
     height: 600px;
-    background: orangered;
+    background: cadetblue;
     border-radius: 20px;
 
     .about_info_welcome{
@@ -18,8 +18,29 @@ section.about {
     }
   }
   .photos_div {
-      width: 200px;
-      height: 600px;
-      background: orangered;
+      background: none;
+
+    .example_photo_one{
+      position: absolute;
+      width: 30%;
+      height: auto;
+      margin-top: -8%;
+      margin-left: -31%;
+      border-radius: 2rem;
+    }
+    .example_photo_two{
+      position: absolute;
+      width: 20%;
+      margin-top: 3%;
+      margin-left: -20%;
+      border-radius: 2rem;
+    }
+    .example_photo_three{
+      position: absolute;
+      width: 20%;
+      margin-top: -20%;
+      margin-left: -20%;
+      border-radius: 2rem;
+    }
   }
 }

@@ -8,6 +8,8 @@ section.contact {
 
   .info{
     position: absolute;
+    list-style: none;
+    top: 130%;
   }
   .container-submission{
     width: 35%;
@@ -51,6 +53,7 @@ section.contact {
       border: none;
       border-radius: 20px;
       padding: 10px 10px;
+
 
       &:hover {
         background: green;

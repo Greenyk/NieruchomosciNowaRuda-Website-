@@ -6,6 +6,9 @@ section.contact {
   height: 800px;
   background-color: #ff954a;
 
+  .info{
+    position: absolute;
+  }
   .container-submission{
     width: 35%;
     height: 40%;
@@ -24,6 +27,7 @@ section.contact {
 
     .name-surname, .number, .email {
       align-self: flex-start;
+      margin-top: 1rem;
       margin-left: 1rem;
       border: none;
       border-radius: 20px;

@@ -1,0 +1,27 @@
+.information{
+  width: 100%;
+  height: 300px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+
+
+  .company_information{
+    background-color: red;
+  }
+
+  .link_to_map{
+    width: 50%;
+    padding: 2rem 2rem;
+
+
+  }
+
+  .map{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+
+  }
+
+}

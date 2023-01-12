@@ -57,7 +57,7 @@ header {
         flex-direction: row;
         height: inherit;
         gap: 5rem;
-        font-size: 2rem;
+        font-size: 20px;
         font-weight: normal;
         align-items: center;
         transform: translateX(0);
@@ -65,8 +65,8 @@ header {
 
       .menu-link {
         &:nth-child(2) {
-          background: #ae6502;
-          padding: 0.5rem 1.5rem;
+          background: #de7451;
+          padding: 0.5rem 3rem;
           border-radius: 1rem;
           color: white;
         }
@@ -81,7 +81,7 @@ header {
           content: '';
           width: 0%;
           height: 0.3rem;
-          background: #2d2dea;
+          background: #cc5832;
           position: absolute;
           bottom: -0.4rem;
           left: 0;

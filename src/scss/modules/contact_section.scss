@@ -6,11 +6,19 @@ section.contact {
   height: 800px;
   background-color: #ff954a;
 
-  .info{
-    position: absolute;
-    list-style: none;
-    top: 130%;
+  .container-submission-info{
+    width: 35%;
+    height: 40%;
+    background-color: lightblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+
   }
+
   .container-submission{
     width: 35%;
     height: 40%;
@@ -43,10 +51,14 @@ section.contact {
       width: 90%;
       height: 30%;
       margin-top: 10px;
+      margin-bottom: 20px;
       resize: none;
+
     }
 
     .btm-send {
+      position: absolute;
+      margin-top: 32%;
       background-color: darkorange;
       color: white;
       cursor: pointer;
